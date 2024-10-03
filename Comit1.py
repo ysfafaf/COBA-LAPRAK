@@ -6,11 +6,11 @@ class PembelianBuku:
         self.status = ""
         self.nama = ""
 
-    def indentitas_pembeli(self):
-        self.nama = input("masukan nama : ")
+    def IdentitasPembeli(self):
+        self.nama = input("Masukan Nama Anda: ")
         self.status = input("Anda Berasal dari prodi apa? : ")
         
-    def pilihan_buku(self):
+    def PilihanBuku(self):
         print("Matematika           = Rp90.000")
         print("Fisika               = Rp80.000")
         print("Kalkulus             = Rp85.000")
