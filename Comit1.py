@@ -1,25 +1,26 @@
 class PembelianBuku:
     
-def __init__(self, buku, harga):
-    self.buku = buku
-    self.harga = harga
-    self.status = ""
-     self.nama = ""
+    def __init__(self, buku, harga):
+        self.buku = buku
+        self.harga = harga
+        self.status = ""
+        self.nama = ""
 
-def indentitas_pembeli(self):
-    self.nama = input("masukan nama : ")
-    self.status = input("Anda Berasal dari prodi apa? : ")
-def pilihan_buku(self):
-    print("Matematika           = Rp90.000")
-    print("Fisika               = Rp80.000")
-    print("Kalkulus             = Rp85.000")
-    print("Aljabar              = Rp80.000")
-    print("kimia                = Rp90.000")
-    print("Elektronika Dasar    = Rp85.000")
+    def indentitas_pembeli(self):
+        self.nama = input("masukan nama : ")
+        self.status = input("Anda Berasal dari prodi apa? : ")
+        
+    def pilihan_buku(self):
+        print("Matematika           = Rp90.000")
+        print("Fisika               = Rp80.000")
+        print("Kalkulus             = Rp85.000")
+        print("Aljabar              = Rp80.000")
+        print("kimia                = Rp90.000")
+        print("Elektronika Dasar    = Rp85.000")
 
-    print("==================================================")
+        print("==================================================")
 
-def RekomendasiBuku(self):
+    def RekomendasiBuku(self):
         Komputer = "Kalkulus, Aljabar"
         Elektro = "Kimia, Eldas"
         Sipil = "Fisika, Matematika"
@@ -42,7 +43,7 @@ def RekomendasiBuku(self):
             print(Arsitektur)
             print("=============================================")
 
-def MilihBuku(self):
+    def MilihBuku(self):
         self.Dipilih = []
         self.Buku = ["matematika", "fisika", "kalkulus", "aljabar", "kimia", "eldas"]
         while True:
@@ -55,7 +56,7 @@ def MilihBuku(self):
             else:
                 print("Buku tidak tersedia, silakan pilih lagi.")
 
-def KonfirmasiBayar(self):
+    def KonfirmasiBayar(self):
         harga_buku = {"matematika": 90000, 
                       "fisika": 80000, 
                       "kalkulus": 85000, 
@@ -71,7 +72,7 @@ def KonfirmasiBayar(self):
         if Bayar == "tidak":
             print("Baik, semoga diberikan rezeki yang berlimpah yaa")
 
-def JalankanProgram(self):
+    def JalankanProgram(self):
         print("Selamat Datang di Toko Kami". center(120,"="))
         print("Disini Kami Menjual Buku untuk Mahasiswa Fakultas Teknik, Khususnya Teknik Komputer, Elektro, Sipil, dan Arsitektur")
         
