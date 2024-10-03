@@ -11,14 +11,12 @@ def pilihan_buku(self):
 
     print("==================================================")
 
-
 def RekomendasiBuku(self):
         Komputer = "Kalkulus, Aljabar"
         Elektro = "Kimia, Eldas"
         Sipil = "Fisika, Matematika"
         Arsitektur = "Fisika, Matematika"
     
-
         if self.status.lower() == "komputer":
             print("Rekomendasi Buku Untuk Jurusan Teknik Komputer:")
             print(Komputer)
@@ -35,3 +33,16 @@ def RekomendasiBuku(self):
             print("Rekomendasi Buku Untuk Jurusan Arsitektur:")
             print(Arsitektur)
             print("=============================================")
+
+def MilihBuku(self):
+        self.Dipilih = []
+        self.Buku = ["matematika", "fisika", "kalkulus", "aljabar", "kimia", "eldas"]
+        while True:
+            Milih = input("Mau Buku Yang Mana (ketik 'selesai' jika sudah selesai): ")
+            if Milih.lower() == "selesai":
+                break
+            if Milih.lower() in self.Buku:
+                self.Dipilih.append(Milih.lower())
+                print("Baik, Kamu telah memilih buku", self.Dipilih)
+            else:
+                print("Buku tidak tersedia, silakan pilih lagi.")
